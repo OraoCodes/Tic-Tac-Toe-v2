@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/overlays.css">
         <link rel="stylesheet" href="styles/configuration.css">
+        <link rel="stylesheet" href="styles/game-board.css">
     </head>
     <body>
         <div id="backdrop"></div>
@@ -59,23 +60,20 @@
             </section>
 
             <section id="active-game">
-                <article>
+                <article id="game-over">
                     <h3>You won
                         <span id="winner-name">PLAYER NAME</span></h3>
                     <p>Click "Start New Game Above to start the game</p>
                 </article>
-
                 <p>it`s your turn
                     <span id="active-player-name">PLAYER NAME</span>!</p>
-                <ol>
+                <ol id="game-board">
+                    <li class="disabled">X</li>
                     <li></li>
+                    <li class="disabled">X</li>
+                    <li class="disabled">O</li>
                     <li></li>
-                    <li></li>
-
-                    <li></li>
-                    <li></li>
-                    <li></li>
-
+                    <li class="disabled">X</li>
                     <li></li>
                     <li></li>
                     <li></li>
